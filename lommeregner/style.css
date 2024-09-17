@@ -1,0 +1,66 @@
+body {
+    background-color: gray;
+}
+
+.container {
+    background-color: black;
+    max-width: 300px;
+    display: grid;
+
+    margin: auto;
+    padding: 5px;
+
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+}
+
+#screen {
+    /* grid-column:  1 / -1; */
+    grid-column: span 3;
+    grid-row: span 1;
+    text-align: right;
+    padding: 10px;
+    
+}
+
+.calculator-button {
+aspect-ratio: 1 / 1;
+background-color: aquamarine;
+}
+
+button:hover{
+    background-color: aqua;
+}
+button:active{
+    background-color: white;
+}
+
+#delete-button{
+    background-color: orange;
+}
+
+#equal-button{
+    background-color: blueviolet;
+}
+#equal-button:hover{
+    background-color: aqua;
+}
+#equal-button:active{
+    background-color: aliceblue;
+}
+#delete-button:hover{
+background-color: aqua;
+}
+#delete-button:active{
+    background-color: pink;
+}
+button:nth-child(4n+6){
+    background-color: blue;
+}
+button:hover:nth-child(4n+6){
+    background-color: aqua;
+}
+button:active:nth-child(4n+6){
+    background-color: aliceblue;
+}
